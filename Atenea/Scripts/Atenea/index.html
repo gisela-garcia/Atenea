@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="/">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">  
+  <title>Atenea</title>
+
+  <!-- Vendor CSS -->
+  <link href="http://cdntec.azureedge.net/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+  <link href="http://cdntec.azureedge.net/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="http://cdntec.azureedge.net/vendors/bower_components/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+  <link href="http://cdntec.azureedge.net/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+  <link href="http://cdntec.azureedge.net/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+  
+
+  <!-- CSS -->
+  <link href="http://cdntec.azureedge.net/css/app_1.min.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <link href="http://cdntec.azureedge.net/vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <app-root></app-root>
+ <!-- Page Loader -->
+ <div class="page-loader">
+    <div class="preloader pls-blue">
+        <svg class="pl-circular" viewBox="25 25 50 50">
+            <circle class="plc-path" cx="50" cy="50" r="20" />
+        </svg>
+
+        <p>Por favor espere...</p>
+    </div>
+</div>
+    <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+        <div class="ie-warning">
+            <h1 class="c-white">Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web
+                browsers to access this website.</p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="http://cdntec.azureedge.net/img/browsers/chrome.png" alt="">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="http://cdntec.azureedge.net/img/browsers/firefox.png" alt="">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="http://cdntec.azureedge.net/img/browsers/opera.png" alt="">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="http://cdntec.azureedge.net/img/browsers/safari.png" alt="">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="http://cdntec.azureedge.net/img/browsers/ie.png" alt="">
+                            <div>IE (New)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+        <![endif]-->
+
+        <!-- Javascript Libraries -->
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/flot/jquery.flot.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/flot/jquery.flot.time.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/jqvmap/dist/jquery.vmap.min.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+
+        <script src="http://cdntec.azureedge.net/js/app.min.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/fileinput/fileinput.min.js"></script>
+        <script src="http://cdntec.azureedge.net/vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+    <footer id="footer">
+      D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México. 2022
+      
+      <ul class="f-menu">
+          <li><a href="https://miespacio.itesm.mx/avisos/Paginas/Legal.aspx" target="_blank">Aviso Legal</a></li>
+          <li><a href="https://miespacio.itesm.mx/avisos/Paginas/Privacidad.aspx" target="_blank">Políticas de Privacidad</a></li>
+          <li><a href="https://miespacio.itesm.mx/avisos/Paginas/AvisoPrivacidadTecMonterrey.pdf" target="_blank">Aviso de Privacidad</a></li>
+      </ul>
+  </footer>
+<script src="runtime.js" defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills.js" defer></script><script src="styles.js" defer></script><script src="scripts.js" defer></script><script src="vendor.js" defer></script><script src="main.js" defer></script></body>
+</html>
